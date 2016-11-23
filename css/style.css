@@ -1,13 +1,61 @@
-/* === General Styles === */
+/* ============= General Styles ============= */
 body {
-    background-color: gray;
+    background-color: #ADB0CC;
+    font-family: 'Shanti', sans-serif;
+}
+.brand-logo {
+    font-family: 'Share', cursive;
+}
+.logo-span {
+    color: #FFE14F;
 }
 
-nav, .tabs {
-    color: white;
-    background-color: blue;
+.semi-container {
+    margin: auto;
+    max-width: 1200px; 
+    width: 98%;
 }
 
 .fa-github:before {
     content: "\f09b";
+}
+
+nav {
+    
+}
+
+.portfolio-section {
+    position: relative;
+}
+
+/* ============= Modify Active Tab Styles ============= */
+.tabs .tab a {
+  color: #FFE14F;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0 24px;
+  font-size: 16px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transition: color .28s ease;
+}
+
+.tabs .tab a:hover, .tabs .tab a.active {
+  background-color: transparent;
+  color: #F9F0C0;
+}
+
+.tabs .tab.disabled a,
+.tabs .tab.disabled a:hover {
+  color: #E2D48E;
+  cursor: default;
+}
+
+.tabs .indicator {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  background-color: #F9F0C0;
+  will-change: left, right;
 }
