@@ -1,1 +1,13 @@
 /* === General Styles === */
+body {
+    background-color: gray;
+}
+
+nav, .tabs {
+    color: white;
+    background-color: blue;
+}
+
+.fa-github:before {
+    content: "\f09b";
+}
