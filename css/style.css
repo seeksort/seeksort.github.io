@@ -1,27 +1,30 @@
 /* ============= General Styles ============= */
 body {
-    background-color: #ADB0CC;
+    background-color: #B3BCD8;
+    color: #454259;
     font-family: 'Shanti', sans-serif;
+}
+p {
+    font-size: 1.5em;
 }
 .brand-logo {
     font-family: 'Share', cursive;
 }
 .logo-span {
-    color: #FFE14F;
+    color: #FFEC1C;
 }
 
 .semi-container {
     margin: auto;
     max-width: 1200px; 
-    width: 98%;
 }
 
 .fa-github:before {
     content: "\f09b";
 }
 
-nav {
-    
+.nav-bg-color {
+    background-color: #454259;    
 }
 
 .portfolio-section {
@@ -30,7 +33,7 @@ nav {
 
 /* ============= Modify Active Tab Styles ============= */
 .tabs .tab a {
-  color: #FFE14F;
+  color: #FFEC1C;
   display: block;
   width: 100%;
   height: 100%;
@@ -43,7 +46,7 @@ nav {
 
 .tabs .tab a:hover, .tabs .tab a.active {
   background-color: transparent;
-  color: #F9F0C0;
+  color: #FFF372;
 }
 
 .tabs .tab.disabled a,
@@ -56,6 +59,6 @@ nav {
   position: absolute;
   bottom: 0;
   height: 2px;
-  background-color: #F9F0C0;
+  background-color: #FFF372;
   will-change: left, right;
 }
