@@ -7,6 +7,16 @@ body {
 p {
     font-size: 1.5em;
 }
+a {
+    color: #454259;
+}
+a:active,
+a:hover {
+    color: #7B29B2;
+    outline: 0;
+    outline-color: #1C58B2;
+}
+
 .brand-logo {
     font-family: 'Share', cursive;
 }
@@ -31,7 +41,25 @@ p {
     position: relative;
 }
 
-/* ============= Modify Active Tab Styles ============= */
+/* ============= Icons ============= */
+
+i {
+
+}
+
+li > i {
+
+}
+
+/* ============= Nav ============= */
+a:active,
+a:hover {
+    color: #7B29B2;
+    outline: 0;
+    outline-color: #1C58B2;
+}
+
+/* ============= Nav Active Tab ============= */
 .tabs .tab a {
   color: #FFEC1C;
   display: block;
@@ -61,4 +89,21 @@ p {
   height: 2px;
   background-color: #FFF372;
   will-change: left, right;
+}
+
+/* ============= Projects ============= */
+
+.proj-container {
+    margin: 10px auto;
+}
+
+.proj-img {
+    width: 100%;
+    max-width: 500px;
+    opacity: 0.7;
+}
+.proj-img:hover {
+    width: 100%;
+    max-width: 500px;
+    opacity: 1;
 }
