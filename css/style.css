@@ -16,7 +16,11 @@ a:hover {
     outline: 0;
     outline-color: #1C58B2;
 }
-
+.row {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+}
 .brand-logo {
     font-family: 'Share', cursive;
 }
@@ -26,7 +30,7 @@ a:hover {
 
 .semi-container {
     margin: auto;
-    max-width: 1200px; 
+    max-width: 100%; 
 }
 
 .fa-github:before {
@@ -39,17 +43,21 @@ a:hover {
 
 .portfolio-section {
     position: relative;
+    margin: 0;
+}
+#parallax-bg {
+    width: 100%;
+}
+#headline > h1 {
+    color: #EAD919;
+}
+#headline > h3 {
+    color: #B3BCD8;
 }
 
 /* ============= Icons ============= */
 
-i {
 
-}
-
-li > i {
-
-}
 
 /* ============= Nav ============= */
 a:active,
@@ -106,4 +114,23 @@ a:hover {
     width: 100%;
     max-width: 500px;
     opacity: 1;
+}
+
+/* ============= Resume ============= */
+#Resume {
+    background-color: #A9B1CC;
+}
+.btn, .btn-large,
+.btn-flat {
+  text-transform: none;
+  background-color: #454259;
+}
+.btn:hover, .btn-large:hover,
+.btn-flat:hover {
+  background-color: #949BB2;
+}
+
+/* ============= Contact ============= */
+#Contact {
+    background-color: #9EA6BF;
 }
