@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,136 +13,284 @@
     <!-- Styles -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
-<!-- Nav -->
-<nav class="nav-bg-color">
-    <div class="semi-container nav-extended">
-        <div class="nav-wrapper">
-            <a href="#" class="brand-logo"><span class="logo-span">> </span>Kristin Faner <span class="logo-span">_</span></a>
-            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li class="tab"><a href="#About">About</a></li>
-                <li class="tab"><a href="#Projects">Projects</a></li>
-                <li class="tab"><a href="#Resume">Resume</a></li>
-                <li class="tab"><a href="#Contact">Contact</a></li>
-            </ul>
-            <ul class="side-nav" id="mobile-demo">
-                <li class="tab"><a href="#About">About</a></li>
-                <li class="tab"><a href="#Projects">Projects</a></li>
-                <li class="tab"><a href="#Resume">Resume</a></li>
-                <li class="tab"><a href="#Contact">Contact</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
 
-<!-- About -->
-<div class="row parallax-container">
-    <div class="row">
-        <div class="col s12 center-align" id="headline">
-            <br><br><br><br><br>
-            <h1>Kristin Faner</h1>
-            <h3>Web Developer</h3>
+<body>
+    <!-- Nav -->
+    <nav class="nav-bg-color">
+        <div class="semi-container nav-extended">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo"><span class="logo-span">> </span>Kristin Faner <span class="logo-span">_</span></a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li class="tab"><a href="#About">About</a></li>
+                    <li class="tab"><a href="#Projects">Projects</a></li>
+                    <li class="tab"><a href="#Resume">Resume</a></li>
+                    <li class="tab"><a href="#Contact">Contact</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li class="tab"><a href="#About">About</a></li>
+                    <li class="tab"><a href="#Projects">Projects</a></li>
+                    <li class="tab"><a href="#Resume">Resume</a></li>
+                    <li class="tab"><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
+    </nav>
+    <!-- Headline -->
+    <div class="row parallax-container main">
+        <div class="row">
+            <div class="col s12 center-align" id="headline">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h1>Kristin Faner</h1>
+                <h3>Web Developer</h3>
+            </div>
+        </div>
         <div class="parallax"><img src="img/boardwalk.jpg" id="parallax-bg">
         </div>
-</div>
-
-
-<!-- Projects -->
-<!-- TODO use materialize cards -->
-<div class="semi-container portfolio-section" id="Projects">
-    <div class="proj-container">
+    </div>
+    <!-- About -->
+    <div class="semi-container portfolio-section" id="About">
         <div class="row">
             <div class="col s12 center-align">
-                <h2>Projects</h2>
+                <h2>About</h2>
             </div>
         </div>
         <div class="row">
-            <div class="col s12 m12 l6">
-                <a href="http://serene-shelf-53278.herokuapp.com/">
-                <img src="img/trivia_game.png" class="proj-img">
-                <h4>Earth Trivia</h4>
-                </a>
+            <div class="col s12 m6 offset-m2">
+                <p>Hiyo! My name is Kristin and I'm a web developer living in Austin, Texas. I love trying out new technologies and APIs, because new paradigms stretch my brain and app building skills. I hope to learn and explore more technologies in the future!</p>
             </div>
-            <div class="col s12 m12 l6">
-                <a href="https://github.com/seeksort/BamazonDB">
-                <img src="img/bamazon.png" class="proj-img">
-                <h4>Bamazon Command Line Store</h4>
-                </a>
-            </div>
-            <div class="col s12 m12 l6">
-                <a href="https://aqueous-stream-48906.herokuapp.com/burgers">
-                <img src="img/burger_menu.png" class="proj-img">
-                <h4>Burger Menu</h4>
-                </a>
-            </div>
-            <div class="col s12 m12 l6">
-                <a href="https://floating-shore-27486.herokuapp.com/">
-                <img src="img/friend_finder.png" class="proj-img">
-                <h4>Food Friend Finder</h4>
-                </a>
+            <div class="col s12 m2">
+                <img src="img/headshot.png" id="headshot">
+                <br><br><br><br>
             </div>
         </div>
-        
     </div>
-</div>
-<!-- Resume -->
+
+    
+
+    <!-- Projects -->
+    <div class="semi-container portfolio-section" id="Projects">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 center-align">
+                    <h2>Projects</h2>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Project -->
+                <div class="col s12 m6">
+                    <div class="card sticky-action">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="img/nytreact.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">NY Times Article Search<i class="material-icons right">more_vert</i></span>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://infinite-oasis-88386.herokuapp.com">Heroku</a>
+                            <a href="https://github.com/seeksort/ReactJS-NYT-Search">GitHub</a>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">NY Times Article Search<i class="material-icons right">close</i></span>
+                            <br>
+                            <p>A full-stack app that searches the NYT API and allows users to save article links.</p>
+                            <br>
+                            <p>Technologies used:
+                                <br> React.js, Node.js, Express.js, Mongoose.js, MongoDB, Materialize.css, Axios</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project -->
+                <div class="col s12 m6">
+                    <div class="card sticky-action">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="img/obscura.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Obscura Scraper<i class="material-icons right">more_vert</i></span>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://aqueous-caverns-94383.herokuapp.com">Heroku</a>
+                            <a href="https://github.com/seeksort/obscura-scraper">GitHub</a>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Obscura Scraper<i class="material-icons right">close</i></span>
+                            <br>
+                            <p>A web scraper app that displays place snippets from Atlas Obscura and allows users to comment on places.</p>
+                            <br>
+                            <p>Technologies used:
+                                <br> Node.js, Express.js, jQuery, Mongoose.js, MongoDB, Cheerio, Materialize.css</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Project -->
+                <div class="col s12 m6">
+                    <div class="card sticky-action">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="img/burger_menu.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Burger Menu<i class="material-icons right">more_vert</i></span>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://aqueous-stream-48906.herokuapp.com/burgers">Heroku</a>
+                            <a href="https://github.com/seeksort/BurgersMVCApp">GitHub</a>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Burger Menu<i class="material-icons right">close</i></span>
+                            <br>
+                            <p>An MVC website that tracks and updates available menu items in a MySQL database.</p>
+                            <br>
+                            <p>Technologies used:
+                                <br> Node.js, Express.js, Handlebars.js, MySQL, Sequelize.js</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project -->
+                <div class="col s12 m6">
+                    <div class="card sticky-action">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="img/friend_finder.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Food Friend Finder<i class="material-icons right">more_vert</i></span>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://floating-shore-27486.herokuapp.com/">Heroku</a>
+                            <a href="https://github.com/seeksort/FoodFriendFinder">GitHub</a>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Food Friend Finder<i class="material-icons right">close</i></span>
+                            <br>
+                            <p>A website for matching dining companions. Uses server-side routing to serve HTML and JSON (for an API), and to determine and return the best friend match.</p>
+                            <br>
+                            <p>Technologies used:
+                            <br> Node.js, Express.js, Bootstrap.css</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Project -->
+                <div class="col s12 m6">
+                    <div class="card sticky-action">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="img/trivia_game.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Geography Trivia<i class="material-icons right">more_vert</i></span>
+                        </div>
+                        <div class="card-action">
+                            <a href="http://serene-shelf-53278.herokuapp.com/">Heroku</a>
+                            <a href="https://github.com/seeksort/TriviaGame">GitHub</a>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Geography Trivia<i class="material-icons right">close</i></span>
+                            <br>
+                            <p>A trivia game using vanilla HTML/CSS with jQuery.</p>
+                            <br>
+                            <p>Technologies used:
+                                <br> jQuery, JavaScript, HTML/CSS</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project -->
+                <div class="col s12 m6">
+                    <div class="card sticky-action">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="img/bamazon.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Bamazon Command Line Store<i class="material-icons right">more_vert</i></span>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://youtu.be/idcSANyXcq4">YouTube Demo</a>
+                            <a href="https://github.com/seeksort/BamazonDB">GitHub</a>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Bamazon Command Line Store<i class="material-icons right">close</i></span>
+                            <br>
+                            <p>A customer- and business-facing command line storefront that updates user transactions in multiple tables.</p>
+                            <br>
+                            <p>Technologies used:
+                                <br> MySQL, Node.js</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Project -->
+            </div>
+            <br><br><br><br>
+        </div>
+    </div>
+    </div>
+
+    <!-- Resume -->
     <!-- PDF and Word Resumes -->
-<div class="semi-container portfolio-section" id="Resume">
-    <div class="row">
-        <div class="col s12 center-align">
-            <h2>Resume</h2>
+    <div class="semi-container" id="Resume">
+        <div class="row">
+            <div class="col s12 center-align">
+                <h2>Resume</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 center-align">
+                <h5>
+                    <a href="resume/Resume - Kristin Faner.pdf" class="waves-effect waves-light btn-large"><i class="fa fa-file-pdf-o fa-3x" aria-hidden="true"></i> PDF</a>
+                    <a href="resume/Resume - Kristin Faner.docx" class="waves-effect waves-light btn-large"><i class="fa fa-file-word-o fa-3x" aria-hidden="true"></i> Word</a>
+                </h5>
+                <br><br><br><br>
+            </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col s12 center-align">
-            <h5><a href="resume/Resume - Kristin Faner.pdf" class="waves-effect waves-light btn-large"><i class="fa fa-file-pdf-o fa-3x" aria-hidden="true"></i> PDF</a>
-            <br><br>
-            <a href="resume/Resume - Kristin Faner.docx" class="waves-effect waves-light btn-large"><i class="fa fa-file-word-o fa-3x" aria-hidden="true"></i> Word</a></h5>
-            <br><br>
-        </div>
-    </div>
-</div>
 
-<!-- Contact -->
+
+    <!-- Contact -->
     <!-- Email, LinkedIn, GitHub, Twitter -->
-<div class="semi-container portfolio-section" id="Contact">
-    <div class="row">
-        <div class="col s12 center-align">
-            <h2>Contact</h2>
+    <div class="semi-container portfolio-section" id="Contact">
+        <div class="container">    
+            <div class="row">
+                <div class="col s12 center-align">
+                    <h2>Contact</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 center-align">
+                    <p>
+                        <a href="mailto:kfaner@gmail.com"><i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i></a>
+                        &nbsp;&nbsp;
+                        <a href="https://github.com/seeksort"><i class="fa fa-github fa-3x"></i></a>
+                        &nbsp;&nbsp;
+                        <a href="https://twitter.com/seeksort"><i class="fa fa-twitter fa-3x"></i></a>
+                        &nbsp;&nbsp;
+                        <a href="https://www.linkedin.com/in/kristinfaner"><i class="fa fa-linkedin-square fa-3x"></i></a>
+                    </p>
+                    <br><br><br><br>
+                    <a href="#"><i class="fa fa-arrow-up  fa-3x"></i></a>
+                    <br><br>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col s6">
-            <br>
-            <p><a href="mailto:kfaner@gmail.com"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i> kfaner@gmail.com</a></p>
-
-        </div>
-        <div class="col s6">
-            <br>
-            <p><a href="https://github.com/seeksort"><i class="fa fa-github fa-2x"></i> GitHub</a></p>
-            <p><a href="https://twitter.com/seeksort"><i class="fa fa-twitter fa-2x"></i> Twitter</a></p>
-            <p><a href="https://www.linkedin.com/in/kristinfaner"><i class="fa fa-linkedin-square fa-2x"></i> LinkedIn</a></p>
-            <br><br>
-        </div>
-    </div>
-</div>    
-
-
-<!-- JavaScript -->
+    <!-- JavaScript -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript">
-        $(".button-collapse").sideNav();
-        $(document).ready(function(){
-      $('.parallax').parallax();
+    $(".button-collapse").sideNav();
+    $(document).ready(function() {
+        $('.parallax').parallax();
     });
     </script>
 </body>
+
 </html>
