@@ -3,11 +3,11 @@
 body {
     background-color: #8990A5;
     color: #454259;
-    font-family: 'Shanti', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
-p {
-    font-size: 1.5em;
+p,li {
+    font-size: 1.4em;
 }
 
 a {
@@ -40,6 +40,7 @@ a:hover {
 .semi-container {
     margin: auto;
     max-width: 100%;
+    min-height: 375px;
 }
 
 .fa-github:before {
