@@ -29,14 +29,6 @@ a:hover {
     margin-bottom: 0px;
 }
 
-.brand-logo {
-    font-family: 'Share', cursive;
-}
-
-.logo-span {
-    color: #FFEC1C;
-}
-
 .semi-container {
     margin: auto;
     max-width: 100%;
@@ -62,12 +54,13 @@ a:hover {
 }
 
 #headline > h1 {
-    color: #EAD919;
-
+    color: #D8D817;
+    font-family: 'Patua One', sans-serif;
 }
 
 #headline > h3 {
-    color: #B3BCD8;
+    color: #C9CFF2;
+    font-family: 'Palanquin', sans-serif;
 }
 
 #headshot {
@@ -79,8 +72,6 @@ a:hover {
   text-align: center;
 }
 
-/* ============= Nav ============= */
-
 a:active,
 a:hover {
     color: #7B29B2;
@@ -91,38 +82,39 @@ a:hover {
 
 /* ============= Nav Active Tab ============= */
 
-.tabs .tab a {
-    color: #FFEC1C;
+nav ul a {
+    color: #C9CFF2;
     display: block;
     width: 100%;
     height: 100%;
+    font-size: 18px;
     padding: 0 24px;
-    font-size: 16px;
     text-overflow: ellipsis;
     overflow: hidden;
     transition: color .28s ease;
 }
 
-.tabs .tab a:hover,
-.tabs .tab a.active {
-    background-color: transparent;
-    color: #FFF372;
+nav ul a:hover,
+nav ul a:active,
+nav ul a:focus {
+    background-color: #3B384C;
+    color: #FFF;
 }
 
-.tabs .tab.disabled a,
-.tabs .tab.disabled a:hover {
-    color: #E2D48E;
-    cursor: default;
+.brand-logo {
+    font-family: 'Share Tech', cursive;
 }
 
-.tabs .indicator {
-    position: absolute;
-    bottom: 0;
-    height: 2px;
-    background-color: #FFF372;
-    will-change: left, right;
+.brand-logo:hover,
+.brand-logo:active,
+.brand-logo:focus {
+    background-color: #3B384C;
+    color: #FFF;
 }
 
+.logo-span {
+    color: #D8D817;
+}
 
 /* ============= Projects ============= */
 
@@ -174,7 +166,10 @@ a:hover {
 
 .btn:hover,
 .btn-large:hover,
-.btn-flat:hover {
+.btn-flat:hover,
+.btn:focus,
+.btn-large:focus,
+.btn-flat:focus {
     background-color: #949BB2;
 }
 

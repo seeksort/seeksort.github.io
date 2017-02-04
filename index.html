@@ -9,7 +9,7 @@
     <!-- CSS Reset -->
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato|Share" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Palanquin:700|Patua+One|Share+Tech|Lato" rel="stylesheet">
     <!-- Styles -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
@@ -49,11 +49,11 @@
                 <br>
                 <br>
                 <br>
-                <h1>Kristin Faner</h1>
-                <h3>Web Developer</h3>
+                <h1 id="headline">Kristin Faner</h1>
+                <h3 id="headline-role">Web Developer</h3>
             </div>
         </div>
-        <div class="parallax"><img src="img/boardwalk.jpg" id="parallax-bg">
+        <div class="parallax"><img src="img/boardwalk.jpg" id="parallax-bg" alt="background image of Austin skyline and boardwalk along Town Lake.">
         </div>
     </div>
     <!-- About -->
@@ -65,7 +65,7 @@
         </div>
         <div class="row">
             <div class="col s12 m6 offset-m2">
-                <p>Hiyo! My name is Kristin and I am a full-stack web developer living in Austin, Texas. I love trying out new technologies, because new paradigms challenge me and stretch my brain. I'm excited about any opportunities to learn and grow as a web developer, and as a person.</p>
+                <p>Hiya! My name is Kristin and I am a web developer living in Austin, Texas. I love trying out new technologies that challenge me and stretch my brain. Please explore my projects and let me know if you have any feedback! I'm excited about any opportunities to grow as a web developer and a person.</p>
                 <h5>Technology Stack:</h5>
                 <div class="row">
                     <div class="col s6">
@@ -89,7 +89,7 @@
                 </div>
             </div>
             <div class="col s12 m2 center-align">
-                <img src="img/headshot.png" id="headshot">
+                <img src="img/headshot.png" id="headshot" alt="image of Kristin Faner">
                 <br><br><br><br>
             </div>
         </div>
@@ -110,7 +110,7 @@
                 <div class="col s12 m6">
                     <div class="card sticky-action">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/nytreact.png">
+                            <img class="activator" src="img/nytreact.png" alt="New York Times Article Search query box">
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">NY Times Article Search<i class="material-icons right">more_vert</i></span>
@@ -133,7 +133,7 @@
                 <div class="col s12 m6">
                     <div class="card sticky-action">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/obscura.png">
+                            <img class="activator" src="img/obscura.png" alt="Obscura Scraper app, with buttons depicting place names to search">
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Obscura Scraper<i class="material-icons right">more_vert</i></span>
@@ -158,7 +158,7 @@
                 <div class="col s12 m6">
                     <div class="card sticky-action">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/burger_menu.png">
+                            <img class="activator" src="img/burger_menu.png" alt="burger menu app, with one column indicating available burgers and one column indicating burgers eaten.">
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Burger Menu<i class="material-icons right">more_vert</i></span>
@@ -181,7 +181,7 @@
                 <div class="col s12 m6">
                     <div class="card sticky-action">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/friend_finder.png">
+                            <img class="activator" src="img/friend_finder.png" alt="Food Friend Finder survey questions, below a picture of a restaurant">
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Food Friend Finder<i class="material-icons right">more_vert</i></span>
@@ -206,7 +206,7 @@
                 <div class="col s12 m6">
                     <div class="card sticky-action">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/trivia_game.png">
+                            <img class="activator" src="img/trivia_game.png" alt="trivia game app, with questions and answers on a 1/3 scrren sidebar and a picture of the desert taking up the rest of the screen">
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Geography Trivia<i class="material-icons right">more_vert</i></span>
@@ -229,7 +229,7 @@
                 <div class="col s12 m6">
                     <div class="card sticky-action">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/bamazon.png">
+                            <img class="activator" src="img/bamazon.png" alt="bamazon command line application, currently depicting 'View Low Inventory' option and results.">
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Bamazon Command Line Store<i class="material-icons right">more_vert</i></span>
@@ -312,7 +312,6 @@
     <!-- JavaScript -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript">
     $(".button-collapse").sideNav();
     $(document).ready(function() {
