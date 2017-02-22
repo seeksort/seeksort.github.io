@@ -6,54 +6,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Kristin Faner</title>
-    <!-- CSS Reset -->
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Palanquin:700|Patua+One|Share+Tech|Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech|Lato" rel="stylesheet">
     <!-- Styles -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="img/favicons/manifest.json">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
     <!-- Nav -->
-    <nav class="nav-bg-color">
-        <div class="semi-container nav-extended">
-            <div class="nav-wrapper">
-                <a href="#" class="brand-logo"><span class="logo-span">> </span>Kristin Faner <span class="logo-span">_</span></a>
-                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li class="tab"><a href="#About">About</a></li>
-                    <li class="tab"><a href="#Projects">Projects</a></li>
-                    <li class="tab"><a href="#Resume">Resume</a></li>
-                    <li class="tab"><a href="#Contact">Contact</a></li>
-                </ul>
-                <ul class="side-nav" id="mobile-demo">
-                    <li class="tab"><a href="#About">About</a></li>
-                    <li class="tab"><a href="#Projects">Projects</a></li>
-                    <li class="tab"><a href="#Resume">Resume</a></li>
-                    <li class="tab"><a href="#Contact">Contact</a></li>
-                </ul>
+    <div class="navbar-fixed">
+        <nav class="nav-bg-color">
+            <div class="nav-extended">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo"><span class="logo-span">&nbsp; > </span>Kristin Faner <span class="logo-span" id="logo-span-cursor">_</span></a>
+                    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li class="tab"><a href="#About">About</a></li>
+                        <li class="tab"><a href="#Projects">Projects</a></li>
+                        <li class="tab"><a href="#Resume">Resume</a></li>
+                        <li class="tab"><a href="#Contact">Contact</a></li>
+                    </ul>
+                    <ul class="side-nav" id="mobile-demo">
+                        <li class="tab"><a href="#About">About</a></li>
+                        <li class="tab"><a href="#Projects">Projects</a></li>
+                        <li class="tab"><a href="#Resume">Resume</a></li>
+                        <li class="tab"><a href="#Contact">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
     <!-- Headline -->
     <div class="row parallax-container main">
         <div class="row">
-            <div class="col s12 center-align" id="headline">
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <h1 id="headline">Kristin Faner</h1>
-                <h3 id="headline-role">Web Developer</h3>
+            <div class="col s12 center-align">
+                <div class="push-div"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s2 right-align">
+                <div class="command-ln-char-div"><span id="command-ln-char">> </span></div>
+            </div>
+            <div class="col s10 left-align">
+                <div class="headline-div"><span id="headline"></span></div>
             </div>
         </div>
         <div class="parallax"><img src="img/boardwalk.jpg" id="parallax-bg" alt="background image of Austin skyline and boardwalk along Town Lake.">
@@ -98,8 +104,6 @@
         </div>
     </div>
 
-    
-
     <!-- Projects -->
     <div class="semi-container portfolio-section" id="Projects">
         <div class="container">
@@ -113,14 +117,37 @@
                 <div class="col s12 m6">
                     <div class="card sticky-action">
                         <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="img/coordinate.png" alt="A project management app depicting a board with three tasks lists, with task cards within each list.">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Get It Together<i class="material-icons right">more_vert</i></span>
+                        </div>
+                        <div class="card-action">
+                            <a target="_blank" href="https://getittogetherkanban.herokuapp.com/">Heroku</a>
+                            <a target="_blank" href="https://github.com/seeksort/Coordinate-Kanban-App">GitHub</a>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Get It Together<i class="material-icons right">close</i></span>
+                            <br>
+                            <p>A Trello clone. Allows authenticated users to work on teams and assign tasks.</p>
+                            <br>
+                            <p>Technologies used:
+                            <br> React.js, Node.js, MongoDB, Express.js, Passport.js, Materialize.css</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project -->
+                <div class="col s12 m6">
+                    <div class="card sticky-action">
+                        <div class="card-image waves-effect waves-block waves-light">
                             <img class="activator" src="img/emojiarcade.png" alt="memory game app based on standard emoji themes">
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Emoji Arcade<i class="material-icons right">more_vert</i></span>
                         </div>
                         <div class="card-action">
-                            <a href="https://emoji-arcade.herokuapp.com/">Heroku</a>
-                            <a href="https://github.com/tuanqtran/team-emoji">GitHub</a>
+                            <a target="_blank" href="https://emoji-arcade.herokuapp.com/">Heroku</a>
+                            <a target="_blank" href="https://github.com/tuanqtran/team-emoji">GitHub</a>
                         </div>
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-4">Emoji Arcade<i class="material-icons right">close</i></span>
@@ -129,6 +156,33 @@
                             <br>
                             <p>Technologies used:
                                 <br>jQuery, JavaScript, HTML/CSS, MySQL/Sequelize, Node.js</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="row">
+                <!-- Project -->
+                <div class="col s12 m6">
+                    <div class="card sticky-action">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="img/obscura.png" alt="Obscura Scraper app, with buttons depicting place names to search">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Obscura Scraper<i class="material-icons right">more_vert</i></span>
+                        </div>
+                        <div class="card-action">
+                            <a target="_blank" href="https://aqueous-caverns-94383.herokuapp.com">Heroku</a>
+                            <a target="_blank" href="https://github.com/seeksort/obscura-scraper">GitHub</a>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Obscura Scraper<i class="material-icons right">close</i></span>
+                            <br>
+                            <p>A web scraper app that displays place snippets from Atlas Obscura and allows users to comment on places.</p>
+                            <br>
+                            <p>Technologies used:
+                                <br> Node.js, Express.js, jQuery, Mongoose.js, MongoDB, Cheerio, Materialize.css</p>
                         </div>
                     </div>
                 </div>
@@ -142,8 +196,8 @@
                             <span class="card-title activator grey-text text-darken-4">NY Times Article Search<i class="material-icons right">more_vert</i></span>
                         </div>
                         <div class="card-action">
-                            <a href="https://infinite-oasis-88386.herokuapp.com">Heroku</a>
-                            <a href="https://github.com/seeksort/ReactJS-NYT-Search">GitHub</a>
+                            <a target="_blank" href="https://infinite-oasis-88386.herokuapp.com">Heroku</a>
+                            <a target="_blank" href="https://github.com/seeksort/ReactJS-NYT-Search">GitHub</a>
                         </div>
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-4">NY Times Article Search<i class="material-icons right">close</i></span>
@@ -162,37 +216,14 @@
                 <div class="col s12 m6">
                     <div class="card sticky-action">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/obscura.png" alt="Obscura Scraper app, with buttons depicting place names to search">
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Obscura Scraper<i class="material-icons right">more_vert</i></span>
-                        </div>
-                        <div class="card-action">
-                            <a href="https://aqueous-caverns-94383.herokuapp.com">Heroku</a>
-                            <a href="https://github.com/seeksort/obscura-scraper">GitHub</a>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Obscura Scraper<i class="material-icons right">close</i></span>
-                            <br>
-                            <p>A web scraper app that displays place snippets from Atlas Obscura and allows users to comment on places.</p>
-                            <br>
-                            <p>Technologies used:
-                                <br> Node.js, Express.js, jQuery, Mongoose.js, MongoDB, Cheerio, Materialize.css</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project -->
-                <div class="col s12 m6">
-                    <div class="card sticky-action">
-                        <div class="card-image waves-effect waves-block waves-light">
                             <img class="activator" src="img/burger_menu.png" alt="burger menu app, with one column indicating available burgers and one column indicating burgers eaten.">
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Burger Menu<i class="material-icons right">more_vert</i></span>
                         </div>
                         <div class="card-action">
-                            <a href="https://aqueous-stream-48906.herokuapp.com/burgers">Heroku</a>
-                            <a href="https://github.com/seeksort/BurgersMVCApp">GitHub</a>
+                            <a target="_blank" href="https://aqueous-stream-48906.herokuapp.com/burgers">Heroku</a>
+                            <a target="_blank" href="https://github.com/seeksort/BurgersMVCApp">GitHub</a>
                         </div>
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-4">Burger Menu<i class="material-icons right">close</i></span>
@@ -201,32 +232,6 @@
                             <br>
                             <p>Technologies used:
                                 <br> Node.js, Express.js, Handlebars.js, MySQL, Sequelize.js</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                
-                <!-- Project -->
-                <div class="col s12 m6">
-                    <div class="card sticky-action">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/friend_finder.png" alt="Food Friend Finder survey questions, below a picture of a restaurant">
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Food Friend Finder<i class="material-icons right">more_vert</i></span>
-                        </div>
-                        <div class="card-action">
-                            <a href="https://floating-shore-27486.herokuapp.com/">Heroku</a>
-                            <a href="https://github.com/seeksort/FoodFriendFinder">GitHub</a>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Food Friend Finder<i class="material-icons right">close</i></span>
-                            <br>
-                            <p>A website for matching dining companions. Uses server-side routing to serve HTML and JSON (for an API), and to determine and return the best friend match.</p>
-                            <br>
-                            <p>Technologies used:
-                            <br> Node.js, Express.js, Bootstrap.css</p>
                         </div>
                     </div>
                 </div>
@@ -240,11 +245,11 @@
                             <span class="card-title activator grey-text text-darken-4">Movies by the Masses<i class="material-icons right">more_vert</i></span>
                         </div>
                         <div class="card-action">
-                            <a href="https://young-plateau-77551.herokuapp.com/">Heroku</a>
-                            <a href="https://github.com/seeksort/MoviesGroupProject">GitHub</a>
+                            <a target="_blank" href="http://young-plateau-77551.herokuapp.com/">Heroku</a>
+                            <a target="_blank" href="https://github.com/seeksort/MoviesGroupProject">GitHub</a>
                         </div>
                         <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Bamazon Command Line Store<i class="material-icons right">close</i></span>
+                            <span class="card-title grey-text text-darken-4">Movies By the Masses<i class="material-icons right">close</i></span>
                             <br>
                             <p>(Group Project) An app that uses Twitter, IMDB, and sentiment analysis to find out how people are feeling about current or popular movies.</p>
                             <br>
@@ -262,7 +267,6 @@
     </div>
 
     <!-- Resume -->
-    <!-- PDF and Word Resumes -->
     <div class="semi-container" id="Resume">
         <div class="row">
             <div class="col s12 center-align">
@@ -273,22 +277,20 @@
         <div class="row">
             <div class="col s12 center-align">
                 <h5>
-                    <a href="resume/Resume - Kristin Faner.pdf" class="waves-effect waves-light btn-large"><i class="fa fa-file-pdf-o fa-3x" aria-hidden="true"></i> PDF</a>
+                    <a target="_blank" href="resume/Resume - Kristin Faner.pdf" class="waves-effect waves-light btn-large"><i class="fa fa-file-pdf-o fa-3x" aria-hidden="true"></i> PDF</a>
                 </h5>
                 
             </div>
             <div class="col s12 center-align">
                 <h5>
-                    <a href="resume/Resume - Kristin Faner.docx" class="waves-effect waves-light btn-large"><i class="fa fa-file-word-o fa-3x" aria-hidden="true"></i> Word</a>
+                    <a target="_blank" href="resume/Resume - Kristin Faner.docx" class="waves-effect waves-light btn-large"><i class="fa fa-file-word-o fa-3x" aria-hidden="true"></i> Word</a>
                 </h5>
                 <br><br><br><br>
             </div>
         </div>
     </div>
 
-
     <!-- Contact -->
-    <!-- Email, LinkedIn, GitHub, Twitter -->
     <div class="semi-container portfolio-section" id="Contact">
         <div class="container">    
             <div class="row">
@@ -302,27 +304,57 @@
                     <h5>
                         <a href="mailto:kfaner@gmail.com"><i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i></a>
                         &nbsp;&nbsp;
-                        <a href="https://github.com/seeksort"><i class="fa fa-github fa-3x"></i></a>
+                        <a target="_blank" href="https://github.com/seeksort"><i class="fa fa-github fa-3x"></i></a>
                         &nbsp;&nbsp;
-                        <a href="https://twitter.com/seeksort"><i class="fa fa-twitter fa-3x"></i></a>
+                        <a target="_blank" href="https://twitter.com/seeksort"><i class="fa fa-twitter fa-3x"></i></a>
                         &nbsp;&nbsp;
-                        <a href="https://www.linkedin.com/in/kristinfaner"><i class="fa fa-linkedin-square fa-3x"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/kristinfaner"><i class="fa fa-linkedin-square fa-3x"></i></a>
                     </h5>
-                    <br><br><br><br><br><br><br><br>
-                    <a href="#"><i class="fa fa-arrow-up  fa-3x"></i></a>
+                    <br><br><br><br>
+                    <a href="#"><i class="fa fa-arrow-up fa-4x"></i></a>
                     <br><br>
                 </div>
             </div>
         </div>
     </div>
     <!-- JavaScript -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/typed.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollfire.min.js"></script>
     <script type="text/javascript">
+    // Parallax effect
     $(".button-collapse").sideNav();
     $(document).ready(function() {
         $('.parallax').parallax();
     });
+    // Typing effect
+    $("#headline").typed({
+        strings: ["Kristin Faner <br> Web Developer"],
+        showCursor: true,
+        cursorChar: "_",
+        typeSpeed: 25,
+        startDelay: 1200
+    });
+
+    // Fade nav on scroll
+    $('.main').scrollfire({
+    onScrollDown: function( elm, distance_scrolled ) {
+            $('.brand-logo').animate({opacity: 1}, 1500);
+            $('.brand-logo').addClass('fully-visible');
+        }
+    });
+    </script>
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-92398407-1', 'auto');
+      ga('send', 'pageview');
+
     </script>
 </body>
 

@@ -17,7 +17,7 @@ a {
 
 a:active,
 a:hover {
-    color: #7B29B2;
+    color: #D8D817;
     outline: 0;
     outline-color: #1C58B2;
     font-weight: bold;
@@ -50,17 +50,62 @@ a:hover {
 }
 
 #parallax-bg {
-    width: 100%;
+    background-size: contain;
 }
 
-#headline > h1 {
+.push-div {
+    height: 150px;
+}
+
+@media only screen and (max-width: 468px){
+    .push-div {
+        height: 75px;
+    }
+}
+
+.headline-div {
+    height: 10%;
+}
+
+.command-ln-char-div {
+    display: inline-block;
+}
+
+#command-ln-char {
     color: #D8D817;
-    font-family: 'Patua One', sans-serif;
+    font-family: 'Share Tech', cursive;
+    font-size: 4em;    
 }
 
-#headline > h3 {
-    color: #C9CFF2;
-    font-family: 'Palanquin', sans-serif;
+#headline {
+    color: #EAEAFF;
+    font-weight: bold;
+    font-family: 'Share Tech', cursive;
+    font-size: 4em;
+}
+
+.typed-cursor {
+    opacity: 1;
+    color: #D8D817;
+    font-size: 4em;
+    -webkit-animation: blink 1s infinite;
+    -moz-animation: blink 1s infinite;
+    animation: blink 1s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }
 
 #headshot {
@@ -74,7 +119,7 @@ a:hover {
 
 a:active,
 a:hover {
-    color: #7B29B2;
+    color: #D8D817;
     outline: 0;
     outline-color: #1C58B2;
 }
@@ -83,7 +128,7 @@ a:hover {
 /* ============= Nav Active Tab ============= */
 
 nav ul a {
-    color: #C9CFF2;
+    color: #FEFFF2;
     display: block;
     width: 100%;
     height: 100%;
@@ -98,24 +143,46 @@ nav ul a:hover,
 nav ul a:active,
 nav ul a:focus {
     background-color: #3B384C;
-    color: #FFF;
+    color: #EAEAFF;
 }
 
-.brand-logo {
+nav .brand-logo {
     font-family: 'Share Tech', cursive;
+    opacity: 0;
+    color: #FEFFF2;
 }
 
 .brand-logo:hover,
 .brand-logo:active,
 .brand-logo:focus {
     background-color: #3B384C;
-    color: #FFF;
+    color: #EAEAFF;
 }
 
 .logo-span {
     color: #D8D817;
 }
-
+.logo-span-cursor {
+    color: #D8D817;
+    -webkit-animation: blink 1s infinite;
+    -moz-animation: blink 1s infinite;
+    animation: blink 1s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
 /* ============= Projects ============= */
 
 #Projects {
@@ -135,7 +202,7 @@ nav ul a:focus {
 }
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-floating):hover {
-    color: #7B29B2;
+    color: #A0A011;
 }
 
 .proj-img {
