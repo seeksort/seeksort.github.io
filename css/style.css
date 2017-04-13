@@ -1,23 +1,23 @@
 /* ============= General Styles ============= */
 
 body {
-    background-color: #8990A5;
-    color: #454259;
-    font-family: 'Lato', sans-serif;
+    background-color: #DEE0F9;
+    color: #4F4B66;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 p,li {
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 
 a {
-    color: #454259;
+    color: #4F4B66;
     font-weight: bold;
 }
 
 a:active,
 a:hover {
-    color: #D8D817;
+    color: #000;
     outline: 0;
     outline-color: #1C58B2;
     font-weight: bold;
@@ -35,16 +35,21 @@ a:hover {
     min-height: 375px;
 }
 
+.heading-bumper {
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
 .fa-github:before {
     content: "\f09b";
 }
 
 .nav-bg-color {
-    background-color: #454259;
+    background-color: #4F4B66;
 }
 
 .portfolio-section {
-    background-color: #B3BCD8;
+    background-color: #D3D5ED;
     position: relative;
     margin: 0;
 }
@@ -53,14 +58,14 @@ a:hover {
     background-size: contain;
 }
 
-.push-div {
-    height: 150px;
+.parallax-container {
+  position: relative;
+  overflow: hidden;
+  height: 650px;
 }
 
-@media only screen and (max-width: 468px){
-    .push-div {
-        height: 75px;
-    }
+.push-div {
+    height: 200px;
 }
 
 .headline-div {
@@ -81,7 +86,7 @@ a:hover {
     color: #EAEAFF;
     font-weight: bold;
     font-family: 'Share Tech', cursive;
-    font-size: 4em;
+    font-size: 4.5em;
 }
 
 .typed-cursor {
@@ -117,11 +122,33 @@ a:hover {
   text-align: center;
 }
 
-a:active,
-a:hover {
-    color: #D8D817;
-    outline: 0;
-    outline-color: #1C58B2;
+@media only screen and (max-width: 468px){
+    .push-div {
+        height: 125px;
+    }
+    #command-ln-char {
+        color: #D8D817;
+        font-family: 'Share Tech', cursive;
+        font-size: 4em;    
+    }
+    #headline {
+        color: #EAEAFF;
+        font-weight: bold;
+        font-family: 'Share Tech', cursive;
+        font-size: 4em;
+    }
+    .typed-cursor {
+        opacity: 1;
+        color: #D8D817;
+        font-size: 3.5em;
+        -webkit-animation: blink 1s infinite;
+        -moz-animation: blink 1s infinite;
+        animation: blink 1s infinite;
+    }
+    .heading-bumper {
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
 }
 
 
@@ -183,26 +210,56 @@ nav .brand-logo {
     50% { opacity:0; }
     100% { opacity:1; }
 }
+/* ============= About ============= */
+
+#About {
+    background-color: #D3D5ED;
+}
+
+.devicon-javascript-plain,
+.devicon-html5-plain,
+.devicon-css3-plain,
+.devicon-react-original,
+.devicon-jquery-plain,
+.devicon-nodejs-plain,
+.devicon-mysql-plain,
+.devicon-mongodb-plain {
+    font-size: 6em;
+}
+
+.devicon-javascript-plain:hover,
+.devicon-html5-plain:hover,
+.devicon-css3-plain:hover,
+.devicon-react-original:hover,
+.devicon-jquery-plain:hover,
+.devicon-nodejs-plain:hover,
+.devicon-mysql-plain:hover,
+.devicon-mongodb-plain:hover,
+.social-icons a:hover {
+    color: #D8D817;
+    text-shadow: 1px 2px 6px #4F4B66;
+}
+
 /* ============= Projects ============= */
 
 #Projects {
-    background-color: #A9B1CC;
+    background-color: #DEE0F9;
 }
 
 .card-title {
-    color: #454259;
+    color: #4F4B66;
 }
 
 .card, .card-content, .card-reveal, .card-action {
-    background-color: #CCD2E5;
+    background-color: #D0D4ED;
 }
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
-    color: #454259;
+    color: #4F4B66;
 }
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-floating):hover {
-    color: #A0A011;
+    color: #928EA5;
 }
 
 .proj-img {
@@ -221,14 +278,14 @@ nav .brand-logo {
 /* ============= Resume ============= */
 
 #Resume {
-    background-color: #9EA6BF;
+    background-color: #D3D5ED;
 }
 
 .btn,
 .btn-large,
 .btn-flat {
     text-transform: none;
-    background-color: #454259;
+    background-color: #4F4B66;
 }
 
 .btn:hover,
@@ -244,5 +301,5 @@ nav .brand-logo {
 /* ============= Contact ============= */
 
 #Contact {
-    background-color: #8990A5;
+    background-color: #DEE0F9;
 }

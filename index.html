@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Kristin Faner</title>
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Share+Tech|Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech|Ubuntu" rel="stylesheet">
     <!-- CSS Reset -->
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <!-- Styles -->
@@ -16,6 +16,8 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Devicons -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
@@ -39,16 +41,16 @@
                         <li class="tab"><a href="#Resume">Resume</a></li>
                         <li class="tab"><a href="#Contact">Contact</a></li>
                     </ul>
-                    <ul class="side-nav" id="mobile-demo">
-                        <li class="tab"><a href="#About">About</a></li>
-                        <li class="tab"><a href="#Projects">Projects</a></li>
-                        <li class="tab"><a href="#Resume">Resume</a></li>
-                        <li class="tab"><a href="#Contact">Contact</a></li>
-                    </ul>
                 </div>
             </div>
         </nav>
     </div>
+    <ul class="side-nav" id="mobile-demo">
+        <li class="tab"><a href="#About">About</a></li>
+        <li class="tab"><a href="#Projects">Projects</a></li>
+        <li class="tab"><a href="#Resume">Resume</a></li>
+        <li class="tab"><a href="#Contact">Contact</a></li>
+    </ul>
     <!-- Headline -->
     <div class="row parallax-container main">
         <div class="row">
@@ -70,39 +72,31 @@
     <!-- About -->
     <div class="semi-container portfolio-section" id="About">
         <div class="row">
-            <div class="col s12 center-align">
+            <div class="col s12 center-align heading-bumper">
                 <h2>About</h2>
             </div>
         </div>
         <div class="row">
             <div class="col s12 m6 offset-m2">
-                <p>Hiya! My name is Kristin and I am a web developer living in Austin, Texas. I love trying out new technologies that challenge me and stretch my brain. Please explore my projects and let me know if you have any feedback! I'm excited about any opportunities to grow as a web developer and a person.</p>
-                <h5>Technology Stack:</h5>
-                <div class="row">
-                    <div class="col s6">
-                        <ul>
-                            <li>HTML/CSS</li>
-                            <li>JavaScript</li>
-                            <li>jQuery</li>
-                            <li>Bootstrap</li>
-                        </ul>
-                        
-                    </div>
-                    <div class="col s6">
-                        <ul>
-                            <li>Node.js</li>
-                            <li>Express</li>
-                            <li>MongoDB</li>
-                            <li>MySQL</li>
-                        </ul>
-                        <br><br>
-                    </div>
-                </div>
+                <p>Hiya! My name is Kristin, a web developer living in Austin, Texas who loves trying out new technologies and paradigms that stretch my brain. <br><br> Please explore my projects and let me know if you have any feedback! I'm excited about any opportunities to grow as a web developer and a person.</p>
+                <br><br>
             </div>
             <div class="col s12 m2 center-align">
                 <img src="img/headshot.png" id="headshot" alt="image of Kristin Faner">
-                <br><br><br><br>
             </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m6 offset-m2 center-align">
+                <i class="devicon-javascript-plain" title="JavaScript skill icon"></i>
+                <i class="devicon-html5-plain" title="HTML skill icon"></i>
+                <i class="devicon-css3-plain" title="CSS skill icon"></i>
+                <i class="devicon-nodejs-plain" title="Node.js skill icon"></i>
+                <i class="devicon-mysql-plain" title="MySQL skill icon"></i>
+                <i class="devicon-mongodb-plain" title="MongoDB skill icon"></i>
+            </div>
+        </div>
+        <div class="row">
+        <br><br>
         </div>
     </div>
 
@@ -110,7 +104,7 @@
     <div class="semi-container portfolio-section" id="Projects">
         <div class="container">
             <div class="row">
-                <div class="col s12 center-align">
+                <div class="col s12 center-align heading-bumper">
                     <h2>Projects</h2>
                 </div>
             </div>
@@ -271,8 +265,7 @@
     <!-- Resume -->
     <div class="semi-container" id="Resume">
         <div class="row">
-            <div class="col s12 center-align">
-                <br>
+            <div class="col s12 center-align heading-bumper">
                 <h2>Resume</h2>
             </div>
         </div>
@@ -296,24 +289,23 @@
     <div class="semi-container portfolio-section" id="Contact">
         <div class="container">    
             <div class="row">
-                <div class="col s12 center-align">
-                    <br>
+                <div class="col s12 center-align heading-bumper">
                     <h2>Contact</h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col s12 center-align">
-                    <h5>
-                        <a href="mailto:kfaner@gmail.com"><i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i></a>
+                <div class="col s12 center-align social-icons">
+                    <h4>
+                        <a href="mailto:kfaner@gmail.com"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>
                         &nbsp;&nbsp;
-                        <a target="_blank" href="https://github.com/seeksort"><i class="fa fa-github fa-3x"></i></a>
+                        <a target="_blank" href="https://github.com/seeksort"><i class="fa fa-github fa-2x"></i></a>
                         &nbsp;&nbsp;
-                        <a target="_blank" href="https://twitter.com/seeksort"><i class="fa fa-twitter fa-3x"></i></a>
+                        <a target="_blank" href="https://twitter.com/seeksort"><i class="fa fa-twitter fa-2x"></i></a>
                         &nbsp;&nbsp;
-                        <a target="_blank" href="https://www.linkedin.com/in/kristinfaner"><i class="fa fa-linkedin-square fa-3x"></i></a>
-                    </h5>
+                        <a target="_blank" href="https://www.linkedin.com/in/kristinfaner"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                    </h4>
                     <br><br><br><br>
-                    <a href="#"><i class="fa fa-arrow-up fa-4x"></i></a>
+                    <a href="#"><i class="fa fa-arrow-up fa-3x"></i></a>
                     <br><br>
                 </div>
             </div>
