@@ -236,8 +236,8 @@ nav .brand-logo {
 .devicon-mysql-plain:hover,
 .devicon-mongodb-plain:hover,
 .social-icons a:hover {
-    color: #D8D817;
-    text-shadow: 1px 2px 6px #4F4B66;
+    color: #4F4B86;
+    text-shadow: 1px 2px 6px #D8D817;
 }
 
 /* ============= Projects ============= */
