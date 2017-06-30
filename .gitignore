@@ -3,3 +3,5 @@ node_modules
 notes.txt
 todo.md
 img/boardwalk.xcf
+.sass-cache/
+css/style.css.map
