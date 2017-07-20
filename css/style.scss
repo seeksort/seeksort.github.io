@@ -12,7 +12,7 @@ body {
 }
 
 p,li {
-    font-size: 1.2em;
+    font-size: 1.25em;
 }
 
 a {
@@ -221,6 +221,10 @@ nav .brand-logo {
     background-color: $primary-background;
 }
 
+#About > div > div > p {
+    line-height: 22px;
+}
+
 .devicon-javascript-plain,
 .devicon-html5-plain,
 .devicon-css3-plain,
@@ -278,6 +282,11 @@ nav .brand-logo {
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-floating):hover {
     color: #928EA5;
+}
+
+.card-reveal > p {
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .proj-img {
